@@ -27,6 +27,12 @@ class App extends Component {
     });
   }
 
+  handleClick = (id) => {
+    this.setState({
+      giphyId: id
+    });
+  }
+
   render() {
     return (
       <div>
@@ -37,7 +43,7 @@ class App extends Component {
           </div>
         </div>
         <div className="list-container">
-          <GifList gifs={this.state.gifs} />
+          <GifList gifs={this.state.gifs} handleClick={this.handleClick} />
         </div>
       </div>
     );
