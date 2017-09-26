@@ -10,7 +10,6 @@ const API_KEY = 'AblBuO4z90ILlqsGS8QmO2im2kfLOf1N';
 class App extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       gifs: [],
       giphyId: 'xT9IgDEI1iZyb2wqo8'
